@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_839e618943e4840c3fe847f87f136969 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_839e618943e4840c3fe847f87f136969" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_839e618943e4840c3fe847f87f136969 = L.map(
+                "map_839e618943e4840c3fe847f87f136969",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_27a88ab3a3d69eac8bdd3882b1da787f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_27a88ab3a3d69eac8bdd3882b1da787f.addTo(map_839e618943e4840c3fe847f87f136969);
+        
+    
+            var feature_group_b6d9bad1b008cf957909213f6066ca51 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_7d0bf1ffd4fa315ba566268178e93efb = L.marker(
+                [40.765004, -73.7668507],
+                {
+}
+            ).addTo(feature_group_b6d9bad1b008cf957909213f6066ca51);
+        
+    
+            var icon_61afa2c81b17a89f54acdbe75efde0ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0eb8e45e2c039edec439d1c49b45852 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72a58d088906547eb742a503a22505ea = $(`<div id="html_72a58d088906547eb742a503a22505ea" style="width: 100.0%; height: 100.0%;">25-12 40th Ave - $3500 Beds: 1, Baths: 1 Notes: Ocean view</div>`)[0];
+                popup_b0eb8e45e2c039edec439d1c49b45852.setContent(html_72a58d088906547eb742a503a22505ea);
+            
+        
+
+        marker_7d0bf1ffd4fa315ba566268178e93efb.bindPopup(popup_b0eb8e45e2c039edec439d1c49b45852)
+        ;
+
+        
+    
+    
+                marker_7d0bf1ffd4fa315ba566268178e93efb.setIcon(icon_61afa2c81b17a89f54acdbe75efde0ea);
+            
+    
+            var marker_df5e8413a24a076c541ac01f03c151a0 = L.marker(
+                [40.7486142, -73.9448187],
+                {
+}
+            ).addTo(feature_group_b6d9bad1b008cf957909213f6066ca51);
+        
+    
+            var icon_1100981acbf88eed880fa813f8a82f7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e311d2916c9571d6ae323f244a066807 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff08202eb3ad2ed492bd36384e58dc21 = $(`<div id="html_ff08202eb3ad2ed492bd36384e58dc21" style="width: 100.0%; height: 100.0%;">44-16 23rd St - $4200 Beds: 2, Baths: 1 Notes: Close to subway</div>`)[0];
+                popup_e311d2916c9571d6ae323f244a066807.setContent(html_ff08202eb3ad2ed492bd36384e58dc21);
+            
+        
+
+        marker_df5e8413a24a076c541ac01f03c151a0.bindPopup(popup_e311d2916c9571d6ae323f244a066807)
+        ;
+
+        
+    
+    
+                marker_df5e8413a24a076c541ac01f03c151a0.setIcon(icon_1100981acbf88eed880fa813f8a82f7f);
+            
+    
+            var marker_f80a1202acb682e1e5ec010184587ea3 = L.marker(
+                [40.7672031, -73.7860349],
+                {
+}
+            ).addTo(feature_group_b6d9bad1b008cf957909213f6066ca51);
+        
+    
+            var icon_e51514fd28c3dacc18c2591e42cc65bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6218a736e8aff9de1ef7304d85a42874 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c220fd0c0e314740ffb2a201caead45 = $(`<div id="html_6c220fd0c0e314740ffb2a201caead45" style="width: 100.0%; height: 100.0%;">55-11 34th Ave - $3800 Beds: 2, Baths: 2 Notes: Newly renovated</div>`)[0];
+                popup_6218a736e8aff9de1ef7304d85a42874.setContent(html_6c220fd0c0e314740ffb2a201caead45);
+            
+        
+
+        marker_f80a1202acb682e1e5ec010184587ea3.bindPopup(popup_6218a736e8aff9de1ef7304d85a42874)
+        ;
+
+        
+    
+    
+                marker_f80a1202acb682e1e5ec010184587ea3.setIcon(icon_e51514fd28c3dacc18c2591e42cc65bb);
+            
+    
+            feature_group_b6d9bad1b008cf957909213f6066ca51.addTo(map_839e618943e4840c3fe847f87f136969);
+        
+    
+            var feature_group_57354990b58632383a0504ab9ad39c15 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_846cff0b9159ab0fb7895c5b0660aa0e = L.marker(
+                [40.7584907, -73.9619632],
+                {
+}
+            ).addTo(feature_group_57354990b58632383a0504ab9ad39c15);
+        
+    
+            var icon_7524fe38ad050480aacac9e7e4f53ab5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "yellow",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b493802dec80bf43a7a07c3d42cf12b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b06223841088d0d105ee2a359850896f = $(`<div id="html_b06223841088d0d105ee2a359850896f" style="width: 100.0%; height: 100.0%;">417 E 57th St - $5200 Beds: 3, Baths: 1 Notes: River view</div>`)[0];
+                popup_4b493802dec80bf43a7a07c3d42cf12b.setContent(html_b06223841088d0d105ee2a359850896f);
+            
+        
+
+        marker_846cff0b9159ab0fb7895c5b0660aa0e.bindPopup(popup_4b493802dec80bf43a7a07c3d42cf12b)
+        ;
+
+        
+    
+    
+                marker_846cff0b9159ab0fb7895c5b0660aa0e.setIcon(icon_7524fe38ad050480aacac9e7e4f53ab5);
+            
+    
+            feature_group_57354990b58632383a0504ab9ad39c15.addTo(map_839e618943e4840c3fe847f87f136969);
+        
+    
+            var feature_group_cbcbbc9f68961da594dc0a59c4d1dbf3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_cbcbbc9f68961da594dc0a59c4d1dbf3.addTo(map_839e618943e4840c3fe847f87f136969);
+        
+    
+            var feature_group_e69881ed318d2300d79e389a4e787dd8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_26be41c67977f898fc34b2b3235b715b = L.marker(
+                [40.765004, -73.7668507],
+                {
+}
+            ).addTo(feature_group_e69881ed318d2300d79e389a4e787dd8);
+        
+    
+            var icon_3c74b2ab4f7b96655ba4179499857705 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7232e8021403e7c0cbb61b7bfca9901 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b5831e83ccbdaab1660779481fb934a = $(`<div id="html_7b5831e83ccbdaab1660779481fb934a" style="width: 100.0%; height: 100.0%;">25-12 40th Ave - $3500 Beds: 1, Baths: 1 Notes: Ocean view</div>`)[0];
+                popup_f7232e8021403e7c0cbb61b7bfca9901.setContent(html_7b5831e83ccbdaab1660779481fb934a);
+            
+        
+
+        marker_26be41c67977f898fc34b2b3235b715b.bindPopup(popup_f7232e8021403e7c0cbb61b7bfca9901)
+        ;
+
+        
+    
+    
+                marker_26be41c67977f898fc34b2b3235b715b.setIcon(icon_3c74b2ab4f7b96655ba4179499857705);
+            
+    
+            var marker_97aed0f7e4a0ebccf61669617b530c3f = L.marker(
+                [40.7672031, -73.7860349],
+                {
+}
+            ).addTo(feature_group_e69881ed318d2300d79e389a4e787dd8);
+        
+    
+            var icon_113a76e520377a006c2abcf0169aa203 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b887a4402e9390391e11fa5ed93b76aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4343d7051754affd2726d1fb8d8f2ef5 = $(`<div id="html_4343d7051754affd2726d1fb8d8f2ef5" style="width: 100.0%; height: 100.0%;">55-11 34th Ave - $3800 Beds: 2, Baths: 2 Notes: Newly renovated</div>`)[0];
+                popup_b887a4402e9390391e11fa5ed93b76aa.setContent(html_4343d7051754affd2726d1fb8d8f2ef5);
+            
+        
+
+        marker_97aed0f7e4a0ebccf61669617b530c3f.bindPopup(popup_b887a4402e9390391e11fa5ed93b76aa)
+        ;
+
+        
+    
+    
+                marker_97aed0f7e4a0ebccf61669617b530c3f.setIcon(icon_113a76e520377a006c2abcf0169aa203);
+            
+    
+            feature_group_e69881ed318d2300d79e389a4e787dd8.addTo(map_839e618943e4840c3fe847f87f136969);
+        
+    
+            var feature_group_30eafff66aeba452f1e1d1f028f5a84a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_dfc1acffd213d64030fbb1e8071578d7 = L.marker(
+                [40.7486142, -73.9448187],
+                {
+}
+            ).addTo(feature_group_30eafff66aeba452f1e1d1f028f5a84a);
+        
+    
+            var icon_8d905eab540a5fa6222227d46d56b569 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_918baf1a8b081be7ddaa461cf9ed4a48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa2812e5bb3cf5cdcb49345f9bfaa0b6 = $(`<div id="html_aa2812e5bb3cf5cdcb49345f9bfaa0b6" style="width: 100.0%; height: 100.0%;">44-16 23rd St - $4200 Beds: 2, Baths: 1 Notes: Close to subway</div>`)[0];
+                popup_918baf1a8b081be7ddaa461cf9ed4a48.setContent(html_aa2812e5bb3cf5cdcb49345f9bfaa0b6);
+            
+        
+
+        marker_dfc1acffd213d64030fbb1e8071578d7.bindPopup(popup_918baf1a8b081be7ddaa461cf9ed4a48)
+        ;
+
+        
+    
+    
+                marker_dfc1acffd213d64030fbb1e8071578d7.setIcon(icon_8d905eab540a5fa6222227d46d56b569);
+            
+    
+            var marker_6715d33ad5206f1c93fc5130360fb287 = L.marker(
+                [40.7584907, -73.9619632],
+                {
+}
+            ).addTo(feature_group_30eafff66aeba452f1e1d1f028f5a84a);
+        
+    
+            var icon_d2b95da32fe7b39fa7e9e747daeb9804 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "yellow",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbed7e72dbd37ff632b76fd6021b4583 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52dcb7087f435352f54a689065260195 = $(`<div id="html_52dcb7087f435352f54a689065260195" style="width: 100.0%; height: 100.0%;">417 E 57th St - $5200 Beds: 3, Baths: 1 Notes: River view</div>`)[0];
+                popup_dbed7e72dbd37ff632b76fd6021b4583.setContent(html_52dcb7087f435352f54a689065260195);
+            
+        
+
+        marker_6715d33ad5206f1c93fc5130360fb287.bindPopup(popup_dbed7e72dbd37ff632b76fd6021b4583)
+        ;
+
+        
+    
+    
+                marker_6715d33ad5206f1c93fc5130360fb287.setIcon(icon_d2b95da32fe7b39fa7e9e747daeb9804);
+            
+    
+            feature_group_30eafff66aeba452f1e1d1f028f5a84a.addTo(map_839e618943e4840c3fe847f87f136969);
+        
+    
+            var feature_group_93d2a796b66b17dbbd8170f66ee62afe = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_ca76aa25356e6e067556b25f385bd42b = L.marker(
+                [40.765004, -73.7668507],
+                {
+}
+            ).addTo(feature_group_93d2a796b66b17dbbd8170f66ee62afe);
+        
+    
+            var icon_46362d540c16c32ae55f4092d58ae98e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ed3fca650d168837b360c5406ca757a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_983a63476154a0d326cc976403ce79e7 = $(`<div id="html_983a63476154a0d326cc976403ce79e7" style="width: 100.0%; height: 100.0%;">25-12 40th Ave - $3500 Beds: 1, Baths: 1 Notes: Ocean view</div>`)[0];
+                popup_0ed3fca650d168837b360c5406ca757a.setContent(html_983a63476154a0d326cc976403ce79e7);
+            
+        
+
+        marker_ca76aa25356e6e067556b25f385bd42b.bindPopup(popup_0ed3fca650d168837b360c5406ca757a)
+        ;
+
+        
+    
+    
+                marker_ca76aa25356e6e067556b25f385bd42b.setIcon(icon_46362d540c16c32ae55f4092d58ae98e);
+            
+    
+            feature_group_93d2a796b66b17dbbd8170f66ee62afe.addTo(map_839e618943e4840c3fe847f87f136969);
+        
+    
+            var feature_group_aecbef6364b41daddccf15263d08da30 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_0f73b5ec3e4f40aae94c8341260f21de = L.marker(
+                [40.7486142, -73.9448187],
+                {
+}
+            ).addTo(feature_group_aecbef6364b41daddccf15263d08da30);
+        
+    
+            var icon_54d3c053c7fb4d6af872b0764cee1fcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f33007cb78cf4473503882701645a3d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0193cdd66ab09999ae670ffcc909606 = $(`<div id="html_d0193cdd66ab09999ae670ffcc909606" style="width: 100.0%; height: 100.0%;">44-16 23rd St - $4200 Beds: 2, Baths: 1 Notes: Close to subway</div>`)[0];
+                popup_f33007cb78cf4473503882701645a3d0.setContent(html_d0193cdd66ab09999ae670ffcc909606);
+            
+        
+
+        marker_0f73b5ec3e4f40aae94c8341260f21de.bindPopup(popup_f33007cb78cf4473503882701645a3d0)
+        ;
+
+        
+    
+    
+                marker_0f73b5ec3e4f40aae94c8341260f21de.setIcon(icon_54d3c053c7fb4d6af872b0764cee1fcf);
+            
+    
+            var marker_eb7935ebe2fce4f8afe207e91707b239 = L.marker(
+                [40.7672031, -73.7860349],
+                {
+}
+            ).addTo(feature_group_aecbef6364b41daddccf15263d08da30);
+        
+    
+            var icon_e45dae8098ba1edc6261ecad9410ac2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_191913a42275ac3ab9599a54158665d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0082b6bad50f9c4352d7bd8539cae69 = $(`<div id="html_e0082b6bad50f9c4352d7bd8539cae69" style="width: 100.0%; height: 100.0%;">55-11 34th Ave - $3800 Beds: 2, Baths: 2 Notes: Newly renovated</div>`)[0];
+                popup_191913a42275ac3ab9599a54158665d7.setContent(html_e0082b6bad50f9c4352d7bd8539cae69);
+            
+        
+
+        marker_eb7935ebe2fce4f8afe207e91707b239.bindPopup(popup_191913a42275ac3ab9599a54158665d7)
+        ;
+
+        
+    
+    
+                marker_eb7935ebe2fce4f8afe207e91707b239.setIcon(icon_e45dae8098ba1edc6261ecad9410ac2c);
+            
+    
+            feature_group_aecbef6364b41daddccf15263d08da30.addTo(map_839e618943e4840c3fe847f87f136969);
+        
+    
+            var feature_group_f84fb64427058b539b2bc66ec1f24d66 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_6cb5798e9ee2be3c9132e49bde81d70c = L.marker(
+                [40.7584907, -73.9619632],
+                {
+}
+            ).addTo(feature_group_f84fb64427058b539b2bc66ec1f24d66);
+        
+    
+            var icon_55a409af541decf823cdc072b488986a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "yellow",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecde8217ed94daf100991b7be14b7ca9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b471251b7a2f2d3602b09ab5f7e5fd9b = $(`<div id="html_b471251b7a2f2d3602b09ab5f7e5fd9b" style="width: 100.0%; height: 100.0%;">417 E 57th St - $5200 Beds: 3, Baths: 1 Notes: River view</div>`)[0];
+                popup_ecde8217ed94daf100991b7be14b7ca9.setContent(html_b471251b7a2f2d3602b09ab5f7e5fd9b);
+            
+        
+
+        marker_6cb5798e9ee2be3c9132e49bde81d70c.bindPopup(popup_ecde8217ed94daf100991b7be14b7ca9)
+        ;
+
+        
+    
+    
+                marker_6cb5798e9ee2be3c9132e49bde81d70c.setIcon(icon_55a409af541decf823cdc072b488986a);
+            
+    
+            feature_group_f84fb64427058b539b2bc66ec1f24d66.addTo(map_839e618943e4840c3fe847f87f136969);
+        
+    
+            var layer_control_fa38ba680c522080396e433a9295e5a8_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_27a88ab3a3d69eac8bdd3882b1da787f,
+                },
+                overlays :  {
+                    "Type: Apartment" : feature_group_b6d9bad1b008cf957909213f6066ca51,
+                    "Type: Condo" : feature_group_57354990b58632383a0504ab9ad39c15,
+                    "Price \u003c 3500" : feature_group_cbcbbc9f68961da594dc0a59c4d1dbf3,
+                    "Price 3500-4000" : feature_group_e69881ed318d2300d79e389a4e787dd8,
+                    "Price \u003e 4000" : feature_group_30eafff66aeba452f1e1d1f028f5a84a,
+                    "Beds: 1" : feature_group_93d2a796b66b17dbbd8170f66ee62afe,
+                    "Beds: 2" : feature_group_aecbef6364b41daddccf15263d08da30,
+                    "Beds: 3" : feature_group_f84fb64427058b539b2bc66ec1f24d66,
+                },
+            };
+            let layer_control_fa38ba680c522080396e433a9295e5a8 = L.control.layers(
+                layer_control_fa38ba680c522080396e433a9295e5a8_layers.base_layers,
+                layer_control_fa38ba680c522080396e433a9295e5a8_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_839e618943e4840c3fe847f87f136969);
+
+        
+</script>
+</html>
