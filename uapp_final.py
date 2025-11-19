@@ -5,7 +5,7 @@ from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
 
 st.set_page_config(page_title="Integrated Map", layout="wide")
-st.title("Integrated Real Estate Map")
+st.title("Integrated Map")
 
 # --- העלאת קובץ Excel ---
 uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx"])
@@ -66,4 +66,5 @@ if uploaded_file:
 
     # הצגת המפה ב-Streamlit
     st_folium(nyc_map, width=1000, height=600)
+
 
